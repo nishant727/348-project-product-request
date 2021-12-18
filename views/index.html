@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+    table, th, td {
+      border:1px solid black;
+    }
+  </style>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A lightweight page with a small backend"
+    />
+
+    <title>Welcome to Boiler Buys, Shopping for Students!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        BB Product Request Page
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Welcome!</p>
+      <!--<a href="https://combined-multiplex.glitch.me/" title="">Return to Main Page</a>-->
+      <button onclick="window.location.href = 'https://boiler-buys-main.glitch.me/'">Return to Main Page</button>
+
+      <p>Request products!</p>
+
+      <form>
+        <input
+          name="name"
+          type="text"
+          maxlength="100"
+          placeholder="Name"
+        />
+        <input
+          name="product_name"
+          type="text"
+          maxlength="100"
+          placeholder="Product name"
+        />
+        <input
+          name="comments"
+          type="text"
+          maxlength="100"
+          placeholder="Additional Comments"
+        />
+        <button type="submit" id="req-user">Submit Request</button>
+      </form>
+
+      <table style="width:50%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Product Name</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody id="req_table"></tbody>
+      </table>
+      
+    </main>
+  </body>
+</html>
